@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елизавета Цыгвинцева](https://up.htmlacademy.ru/adaptive/16/user/572195).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://up.htmlacademy.ru/adaptive/16/user/198062).
 
 ---
 
