@@ -6,6 +6,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
   &--white {
     color: #ffffff;
   }
@@ -13,19 +14,20 @@
 
 .advantages__description {
   margin: 0;
-  padding-bottom: 25px;
   padding-bottom: 30px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
   color: #333333;
+
   &--number {
     display: block;
     padding-bottom: 10px;
   }
+
   &--white {
-    color:#ffffff;
+    color: #ffffff;
   }
 }
 
@@ -33,20 +35,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   &--white {
-    background-color:#ffffff;
+    background-color: #ffffff;
   }
 }
 
 .advantages__item {
   margin: 0;
   padding: 0;
+
   &--blue {
     background-color: #81b3d2;
   }
+
   &--grey {
-      background-color:#eeeeee;
+      background-color: #eeeeee;
   }
+
   &--image {
     display: block;
     margin: 0 auto;
