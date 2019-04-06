@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $body-font-size;
+  text-transform: uppercase;
+  text-decoration: none;
+  a {
+    text-decoration: $link-decoration;
+  }
+}
