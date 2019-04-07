@@ -8,6 +8,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
   @include container;
 }
 
@@ -16,5 +17,6 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+
   @include container;
 }
