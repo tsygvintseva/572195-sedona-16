@@ -1,0 +1,20 @@
+.page-main__title-image {
+  width: 100%;
+}
+
+.page-main__title {
+  padding-top: 40px;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  @include container;
+}
+
+.page-main__description {
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  @include container;
+}

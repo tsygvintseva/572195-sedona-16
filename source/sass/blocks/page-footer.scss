@@ -1,10 +1,27 @@
 .page-footer {
   margin-top: 10px;
+  @include container;
 }
 
 .page-footer__hashtag {
   padding-left: 92px;
+  padding-top: 26px;
+  padding-bottom: 36px;
   font-size: 21px;
-  line-height: 1px;
+  line-height: 26px;
   font-weight: 700;
+}
+
+.copyright__text {
+  padding-left: 95px;
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 43px;
+}
+
+.page-footer__copyright {
+  padding-bottom: 26px;
 }

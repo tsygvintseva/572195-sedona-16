@@ -7,13 +7,14 @@
 .site-list__item {
   text-align: center;
   background-color: #81b3d2;
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
 .site-list__link {
   display: block;
   padding-top: 7px;
   padding-bottom: 7px;
-  font-size: 18px;
+  font-size: $font-size-title;
   line-height: 40px;
   color: #ffffff;
 

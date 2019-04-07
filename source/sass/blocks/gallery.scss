@@ -1,0 +1,37 @@
+.gallery {
+  @include container;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__item {
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.gallery__title {
+  margin: 0;
+  padding-top: 17px;
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.gallery__author {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+  color: $color-paragraph;
+}
+
+.gallery__like {
+  margin: 0;
+  padding-top: 10px;
+  font-size: $font-size-paragraph;
+  line-height: 24px;
+  font-weight: 700;
+}
