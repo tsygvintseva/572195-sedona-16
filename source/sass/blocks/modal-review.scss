@@ -1,0 +1,44 @@
+.modal-review__mistake {
+  width: 320px;
+  display: none;
+  box-shadow: rgba(0, 1, 1, 0.15);
+}
+
+.modal-review__success {
+  width: 320px;
+  display: none;
+  box-shadow: rgba(0, 1, 1, 0.15);
+}
+
+.modal-review__title {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 56px;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.modal-review__description {
+  padding-left: 56px;
+  padding-right: 56px;
+  font-size: $font-size-paragraph;
+  line-height: 21px;
+  font-weight: 400;
+  color: $color-paragraph;
+}
+
+.modal-review__button {
+  &--ok {
+    margin-left: 65px;
+    margin-bottom: 35px;
+    padding-left: 78px;
+    padding-right: 79px;
+  }
+
+  &--close {
+    border: 20px solid #f2f2f2;
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+}

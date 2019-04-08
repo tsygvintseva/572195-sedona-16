@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-paragraph;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: $link-decoration;
+}

@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  min-width: 50px;
+  padding: 16px 47px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #81b3d2;
+  border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+}

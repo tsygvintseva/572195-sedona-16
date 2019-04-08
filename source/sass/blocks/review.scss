@@ -1,0 +1,129 @@
+.review {
+  @include container;
+}
+
+.review__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review__description {
+  margin: 0;
+  padding-bottom: 30px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: $font-size-paragraph;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: $color-paragraph;
+}
+
+.review__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review__legend {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review__label {
+  font-size: $font-size-paragraph;
+  line-height: 26px;
+  color: $color-paragraph;
+  text-align: left;
+
+  &--username {
+    padding-left: 20px;
+  }
+
+  &--contacts {
+    padding-left: 42px;
+  }
+
+  &--impression {
+    padding-left: 25px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &--attractions {
+    padding-left: 25px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.review__input {
+  margin-left: 10px;
+  height: 58px;
+  border: 0;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding-left: 22px;
+
+  @include placeholder;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    border: solid 4px #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &--phone {
+    margin-left: 20px;
+    width: 280px;
+  }
+
+  &--email {
+    width: 280px;
+    margin-left: 20px;
+  }
+}
+
+.review__comment {
+  margin: 0;
+  width: 279px;
+  height: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 51px;
+  background-color: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
+  padding-left: 21px;
+  padding-top: 22px;
+  padding-right: 33px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    border: solid 4px #e5e5e5;
+    background-color: #ffffff;
+  }
+}
+
+.review__form--button {
+  margin-left: 21px;
+  margin-bottom: 47px;
+}
