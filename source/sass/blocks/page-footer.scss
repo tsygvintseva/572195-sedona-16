@@ -1,10 +1,10 @@
 .page-footer {
   margin-top: 10px;
-
   @include container;
 }
 
 .page-footer__hashtag {
+  margin: 0;
   padding-left: 92px;
   padding-top: 26px;
   padding-bottom: 36px;
@@ -13,16 +13,61 @@
   font-weight: 700;
 }
 
-.copyright__text {
-  padding-left: 95px;
-}
-
 .social__list {
   display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  margin-bottom: 43px;
+  margin-bottom: 51px;
+  margin-left: 84px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 6px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #5496bd;
+  }
+}
+
+.social__link {
+  display: block;
+
+  & svg {
+    fill: #ffffff;
+  }
+
+  &--twitter {
+    padding-left: 14px;
+    padding-top: 16px;
+  }
+
+  &--facebook {
+    padding-left: 20px;
+    padding-top: 14px;
+  }
+
+  &--youtube {
+    padding-left: 13px;
+    padding-top: 17px;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright {
-  padding-bottom: 26px;
+  padding-bottom: 28px;
+}
+
+.copyright__text {
+  padding-left: 95px;
 }
