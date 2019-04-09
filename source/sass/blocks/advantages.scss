@@ -6,20 +6,6 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-
-  &--housing,
-  &--souvenirs,
-  &--food {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 70px;
-    padding-right: 40px;
-    font-size: $font-size-title;
-    line-height: 26px;
-    font-weight: 700;
-  }
-
   &--white {
     color: #ffffff;
   }
@@ -28,24 +14,12 @@
 .advantages__description {
   margin: 0;
   padding-bottom: 30px;
+  padding-left: 32px;
   font-size: $font-size-paragraph;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   color: $color-paragraph;
-
-  &--housing,
-  &--souvenirs,
-  &--food {
-    margin: 0;
-    padding-bottom: 20px;
-    padding-left: 70px;
-    padding-right: 40px;
-    font-size: $font-size-paragraph;
-    line-height: 26px;
-    font-weight: 400;
-    color: $color-paragraph;
-  }
 
   &--white {
     color: #ffffff;
@@ -61,19 +35,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  &--white {
-    background-color: $glob-bg-color;
-  }
 }
 
 .advantages__item {
-  &--housing,
-  &--souvenirs,
-  &--food {
-    @include container;
-  }
-
 
   &--blue {
     background-color: #81b3d2;
@@ -86,5 +50,72 @@
   &--image {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.advantages__sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $glob-bg-color;
+}
+
+.advantages__subitem {
+
+  &--image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.advantages__subtitle {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantages__sub-description {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 40px;
+  font-size: $font-size-paragraph;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-paragraph;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .advantages__sublist {
+    display: flex;
+  }
+
+  .advantages__item {
+    max-width: 256px;
+  }
+
+  .advantages__title {
+    padding-top: 46px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .advantages__description {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 49px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 }
