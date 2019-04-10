@@ -91,10 +91,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-
+    margin-bottom: 57px;
   }
 
   .advantages__sublist {
@@ -109,6 +110,14 @@
     padding-top: 46px;
     padding-left: 47px;
     padding-right: 47px;
+
+    &--global {
+      font-size: 21px;
+      padding-bottom: 20px;
+      padding-top: 51px;
+      padding-left: 139px;
+      padding-right: 139px;
+    }
   }
 
   .advantages__description {
@@ -117,5 +126,11 @@
     padding-bottom: 49px;
     padding-left: 47px;
     padding-right: 47px;
+
+    &--global {
+      padding-left: 139px;
+      padding-right: 139px;
+      padding-bottom: 55px;
+    }
   }
 }

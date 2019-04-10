@@ -96,7 +96,7 @@
 
 .review__comment {
   margin: 0;
-  width: 279px;
+  min-width: 279px;
   height: 160px;
   margin-left: 20px;
   margin-right: 20px;
@@ -123,4 +123,62 @@
 .review__button {
   margin-left: 21px;
   margin-bottom: 47px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .review {
+    margin-top: 71px;
+    margin-bottom: 61px;
+  }
+
+  .review__title {
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .review__description {
+    padding-left: 164px;
+    padding-right: 165px;
+  }
+
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+  }
+
+  .review__group {
+
+      &--impression {
+        order: 1;
+      }
+
+      &--username {
+        order: 2;
+      }
+
+      &--contacts {
+        order: 3;
+      }
+
+      &--attractions {
+        order: 4;
+    }
+
+      &--comment {
+        order: 5;
+      }
+  }
+
+  .review__button {
+    order: 6;
+    padding-left: 64px;
+    padding-right: 75px;
+  }
+
+  .review__comment {
+    min-width: 648px;
+  }
 }

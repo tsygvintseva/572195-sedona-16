@@ -13,3 +13,15 @@
   line-height: 21px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    padding-left: 176px;
+    padding-right: 177px;
+  }
+}

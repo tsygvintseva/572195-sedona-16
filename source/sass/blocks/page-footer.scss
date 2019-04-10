@@ -12,3 +12,16 @@
   line-height: 26px;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+
+  .page-footer {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+  }
+}

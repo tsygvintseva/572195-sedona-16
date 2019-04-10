@@ -1,4 +1,5 @@
-.page-main {
+.page-main__wrapper {
+
   @include container;
 }
 
@@ -34,24 +35,11 @@
   margin-left: 47px;
 }
 
-.page-main__title {
-  padding-top: 40px;
-  font-size: $font-size-title;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-}
 
-.page-main__description {
-  font-size: $font-size-paragraph;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: center;
-}
 
 @media (min-width: $tablet-width) {
 
-  .page-main {
+  .page-main__wrapper {
     width: 768px;
     margin: 0 auto;
   }
@@ -70,5 +58,21 @@
     height: 350px;
     margin-top: 77px;
     margin-left: 154px;
+  }
+
+  .page-main__intro {
+    min-height: 290px;
+    width: 768px;
+    margin-top: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .page-main__title-image {
+    width: 457px;
+    height: 77px;
+    margin-top: 95px;
+    margin-left: 157px;
   }
 }
