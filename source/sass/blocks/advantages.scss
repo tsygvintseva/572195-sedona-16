@@ -6,6 +6,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
   &--white {
     color: #ffffff;
   }
@@ -19,6 +20,7 @@
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+
   color: $color-paragraph;
 
   &--white {
@@ -38,7 +40,6 @@
 }
 
 .advantages__item {
-
   &--blue {
     background-color: #81b3d2;
   }

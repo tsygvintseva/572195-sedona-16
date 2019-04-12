@@ -131,7 +131,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .review {
     margin-top: 71px;
     margin-bottom: 61px;
@@ -155,31 +154,30 @@
   }
 
   .review__group {
-
-      &--impression {
-        order: 1;
-        flex-grow: 1;
-      }
-
-      &--username {
-        order: 2;
-        flex-grow: 1;
-      }
-
-      &--contacts {
-        order: 3;
-        flex-grow: 1;
-      }
-
-      &--attractions {
-        order: 4;
-        flex-grow: 1;
+    &--impression {
+      order: 1;
+      flex-grow: 1;
     }
 
-      &--comment {
-        order: 5;
-        flex-grow: 1;
-      }
+    &--username {
+      order: 2;
+      flex-grow: 1;
+    }
+
+    &--contacts {
+      order: 3;
+      flex-grow: 1;
+    }
+
+    &--attractions {
+      order: 4;
+      flex-grow: 1;
+    }
+
+    &--comment {
+      order: 5;
+      flex-grow: 1;
+    }
   }
 
   .review__button {

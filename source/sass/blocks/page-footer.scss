@@ -20,11 +20,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  @include container-tablet;
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    @include container-tablet;
   }
 }
 
