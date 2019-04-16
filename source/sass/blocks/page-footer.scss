@@ -3,13 +3,6 @@
   margin: 0 auto;
 }
 
-.page-footer__wrapper {
-  @include container-mobile;
-  //
-  // width: 280px;
-  // margin: 0 auto;
-}
-
 .page-footer__hashtag {
   margin: 0;
   padding: 0;
@@ -20,9 +13,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  @include container-tablet;
-
   .page-footer__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -32,6 +25,10 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    @include container-desktop;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }

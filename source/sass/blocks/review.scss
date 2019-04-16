@@ -1,3 +1,8 @@
+.review {
+  padding-right: 23px;
+  padding-left: 21px;
+}
+
 .review__title {
   margin: 0;
   padding-top: 25px;
@@ -24,6 +29,14 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  &--impression {
+    @include container-mobile;
+  }
+
+  &--attractions {
+    @include container-mobile;
+  }
 }
 
 .review__legend {
@@ -39,6 +52,11 @@
 
 .review__item {
   display: flex;
+  align-items: center;
+
+  &--contacts {
+    display: block;
+  }
 }
 
 .review__label {
@@ -47,40 +65,36 @@
   color: $color-paragraph;
   text-align: left;
 
-  &--username {
-    padding-left: 20px;
-  }
-
   &--contacts {
-    padding-left: 42px;
+    padding-left: 22px;
   }
 
   &--impression {
     padding-left: 25px;
     font-weight: 700;
-    cursor: pointer;
   }
 
   &--attractions {
     padding-left: 25px;
     font-weight: 700;
-    cursor: pointer;
   }
 }
 
 .review__input {
+  @include placeholder;
+
   flex-grow: 1;
   margin-left: 10px;
+  padding-left: 22px;
   height: 58px;
   border: 0;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding-left: 22px;
-
-  @include placeholder;
+  border: solid 4px #f2f2f2;
 
   &:hover {
     background-color: #e5e5e5;
+    border: solid 4px #e5e5e5;
   }
 
   &:focus {
@@ -89,34 +103,41 @@
   }
 
   &--phone {
-    margin-left: 20px;
-    width: 280px;
+    width: 100%;
+    margin-left: 0;
   }
 
   &--email {
-    width: 280px;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &--impression {
+    flex-grow: 0;
+  }
+
+  &--attractions {
+    flex-grow: 0;
   }
 }
 
 .review__comment {
-  margin: 0;
-  min-width: 279px;
-  height: 160px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 51px;
-  background-color: #f2f2f2;
-  border: 0;
-  box-sizing: border-box;
   padding-left: 21px;
   padding-top: 22px;
   padding-right: 33px;
+  width: 100%;
+  height: 160px;
+  background-color: #f2f2f2;
+  border: 0;
+  box-sizing: border-box;
   line-height: 26px;
   font-weight: 700;
+  border: solid 4px #f2f2f2;
 
   &:hover {
     background-color: #e5e5e5;
+    border: solid 4px #e5e5e5;
   }
 
   &:focus {
@@ -126,8 +147,12 @@
 }
 
 .review__button {
-  margin-left: 21px;
-  margin-bottom: 47px;
+  width: 100%;
+  padding: 16px 40px;
+}
+
+.review__required-fields {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -157,19 +182,24 @@
     &--impression {
       order: 1;
       flex-grow: 1;
+      width: 50%;
     }
 
-    &--username {
+      &--username {
       order: 2;
       flex-grow: 1;
+      width: 50%;
     }
 
     &--contacts {
       order: 3;
       flex-grow: 1;
+      width: 100%;
     }
 
     &--attractions {
+      @include container-tablet;
+
       order: 4;
       flex-grow: 1;
     }
@@ -180,13 +210,107 @@
     }
   }
 
-  .review__button {
+  .review-wrapper {
     order: 6;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .review__button {
     padding-left: 64px;
     padding-right: 75px;
   }
 
+  .review__required-fields {
+    display: inline-block;
+    color: $color-paragraph;
+  }
+
   .review__comment {
     min-width: 648px;
+  }
+
+  .review__button {
+    width: 50%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 64px;
+    padding-right: 75px;
+  }
+
+  .review__attractions-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review__item-wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 120px;
+  }
+
+  .review__group {
+    &--contacts {
+      width: 100%;
+    }
+
+    &--attractions {
+      width: 100%;
+    }
+
+    &--comment {
+      width: 100%;
+    }
+  }
+
+  .review__item {
+    &--contacts {
+      display: flex;
+    }
+  }
+
+  .review__label {
+    &--contacts {
+      padding-left: 0;
+    }
+  }
+
+  .review__input {
+    &--phone {
+      min-width: 258px;
+    }
+
+    &--email {
+      min-width: 258px;
+    }
+  }
+
+  .review__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__attractions-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__item-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+
+  .review__comment {
+    min-width: 960px;
   }
 }

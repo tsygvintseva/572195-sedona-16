@@ -12,7 +12,7 @@
     <div class="site-wrapper">
 
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -38,7 +38,6 @@
             </button>
           </div>
         </nav>
-
       </header>
 
       <main class="page-main">
@@ -64,12 +63,12 @@
                 </legend>
                 <p class="review__item">
                   <label class="review__label review__label--username" for="username-field">
-                    Имя<sup>*</sup>:</label>
+                  Имя<sup>*</sup>:</label>
                   <input class="review__input" type="text" name="username" id="username-field" placeholder="Петр">
                 </p>
                 <p class="review__item">
                   <label class="review__label review__label--username" for="lastname-field">
-                    Фамилия<sup>*</sup>:</label>
+                  Фамилия<sup>*</sup>:</label>
                     <input class="review__input" type="text" name="lastname" id="lastname-field" placeholder="Иванов">
                 </p>
                 <p class="review__item">
@@ -83,39 +82,41 @@
                 <legend class="review__legend">
                   Контактная информация:
                 </legend>
-                <p class="review__item">
-                  <label class="review__label review__label--contacts" for="phone-field">
-                    Контактный телефон<sup>*</sup>:
-                  </label>
-                  <input class="review__input review__input--phone" type="tel" name="phone" id="phone-field" placeholder="Введите номер">
-                </p>
-                <p class="review__item">
-                  <label class="review__label review__label--contacts" for="email-field">
-                    Электронная почта<sup>*</sup>:
-                  </label>
-                  <input class="review__input review__input--email" type="email" name="email" id="email-field" placeholder="Введите e-mail">
-                </p>
+                <div class="review__contacts-wrapper">
+                  <p class="review__item review__item--contacts">
+                    <label class="review__label review__label--contacts" for="phone-field">
+                      Контактный телефон<sup>*</sup>:
+                    </label>
+                    <input class="review__input review__input--phone" type="tel" name="phone" id="phone-field" placeholder="Введите номер">
+                  </p>
+                  <p class="review__item review__item--contacts">
+                    <label class="review__label review__label--contacts" for="email-field">
+                      Электронная почта<sup>*</sup>:
+                    </label>
+                    <input class="review__input review__input--email" type="email" name="email" id="email-field" placeholder="Введите e-mail">
+                  </p>
+                </div>
               </fieldset>
 
               <fieldset class="review__group review__group--impression">
                 <legend class="review__legend">
                   Ваше общее впечатление:
                 </legend>
-                <p class="review__item">
-                  <label class="review__label review__label--impression">
-                    <input class="review__input" type="radio" name="impression" value="Скорее положительное" checked>
+                <p class="review__item review__item--impression">
+                  <input class="review__input review__input--impression" type="radio" name="impression" id="impression-radio" value="Скорее положительное" checked>
+                  <label class="review__label review__label--impression" for="impression-radio">
                     Скорее положительное
                   </label>
                 </p>
-                <p class="review__item">
-                  <label class="review__label review__label--impression">
-                    <input class="review__input" type="radio" name="impression" value="Скорее отрицательное">
+                <p class="review__item review__item--impression">
+                  <input class="review__input review__input--impression" type="radio" name="impression" id="impression-radio" value="Скорее отрицательное">
+                  <label class="review__label review__label--impression" for="impression-radio">
                     Скорее отрицательное
                   </label>
                 </p>
-                <p class="review__item">
-                  <label class="review__label review__label--impression">
-                    <input class="review__input" type="radio" name="impression" value="Затрудняюсь ответить">
+                <p class="review__item review__item--impression">
+                  <input class="review__input review__input--impression" type="radio" name="impression" id="impression-radio" value="Затрудняюсь ответить">
+                  <label class="review__label review__label--impression" for="impression-radio">
                     Затрудняюсь ответить
                   </label>
                 </p>
@@ -125,30 +126,36 @@
                 <legend class="review__legend">
                   Посещенные достопримечательности:
                 </legend>
-                <p class="review__item">
-                  <label class="review__label review__label--attractions">
-                    <input class="review__input" type="checkbox" name="attractions" value="Мост Дьявола" checked>
-                    Мост Дьявола
-                  </label>
-                </p>
-                <p class="review__item">
-                  <label class="review__label review__label--attractions">
-                    <input class="review__input" type="checkbox" name="attractions" value="Гора Колокол" checked>
-                      Гора Колокол
-                  </label>
-                </p>
-                <p class="review__item">
-                  <label class="review__label review__label--attractions">
-                    <input class="review__input" type="checkbox" name="attractions" value="Слайд-парк" checked>
-                      Слайд-парк
-                  </label>
-                </p>
-                <p class="review__item">
-                  <label class="review__label review__label--attractions">
-                    <input class="review__input" type="checkbox" name="attractions" value="Красные скалы">
-                      Красные скалы
-                  </label>
-                </p>
+                <div class="review__attractions-wrapper">
+                  <div class="review__item-wrapper">
+                    <p class="review__item review__item--attractions">
+                      <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="attractions-checkbox" value="Мост Дьявола" checked>
+                      <label class="review__label review__label--attractions" for="attractions-checkbox">
+                        Мост Дьявола
+                      </label>
+                    </p>
+                    <p class="review__item review__item--attractions">
+                      <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="attractions-checkbox" value="Гора Колокол" checked>
+                      <label class="review__label review__label--attractions" for="attractions-checkbox">
+                        Гора Колокол
+                      </label>
+                    </p>
+                  </div>
+                  <div class="review__item-wrapper">
+                    <p class="review__item review__item--attractions">
+                      <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="attractions-checkbox" value="Слайд-парк" checked>
+                      <label class="review__label review__label--attractions" for="attractions-checkbox">
+                        Слайд-парк
+                      </label>
+                    </p>
+                    <p class="review__item review__item--attractions">
+                      <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="attractions-checkbox" value="Красные скалы">
+                      <label class="review__label review__label--attractions" for="attractions-checkbox">
+                        Красные скалы
+                      </label>
+                    </p>
+                  </div>
+                </div>
               </fieldset>
 
               <fieldset class="review__group review__group--comment">
@@ -157,10 +164,14 @@
                 </legend>
                 <textarea class="review__comment" name="comment" rows="8">Опишите подробно все свои восторги</textarea>
               </fieldset>
-
-              <button class="review__button button" type="submit">
-                Отправить отзыв
-              </button>
+              <div class="review-wrapper">
+                <button class="review__button button" type="submit">
+                  Отправить отзыв
+                </button>
+                <p class="review__required-fields">
+                  * – обязательные поля
+                </p>
+              </div>
             </form>
           </section>
         </div>
@@ -235,5 +246,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
