@@ -1,31 +1,21 @@
-@mixin container {
+@mixin container-mobile {
   width: 320px;
   margin: 0 auto;
 }
 
+@mixin container-tablet {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 @mixin placeholder {
-  &::-webkit-input-placeholder {
-    font-size: $font-size-title;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  &:-moz-placeholder {
-    font-size: $font-size-title;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  &::-moz-placeholder {
-    font-size: $font-size-title;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  &:-ms-input-placeholder {
+  &::placeholder {
     font-size: $font-size-title;
     line-height: 26px;
     font-weight: 700;

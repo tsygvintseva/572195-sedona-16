@@ -1,19 +1,37 @@
 .video {
-  @include container;
+  padding-left: 43px;
+  padding-right: 41px;
+  text-align: center;
 }
 
 .video__title {
-  text-align: center;
   font-size: $font-size-title;
   line-height: 26px;
   font-weight: 700;
 }
 
 .video__description {
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: center;
   font-size: $font-size-paragraph;
   line-height: 21px;
   font-weight: 400;
+}
+
+// .video__description img {
+//   display: block;
+//   margin: 0 auto;
+// }
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding: 0 60px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    padding-left: 176px;
+    padding-right: 177px;
+  }
 }

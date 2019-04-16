@@ -1,7 +1,8 @@
 .hotel-search {
+  padding: 0 20px;
+  margin: 0 auto;
   margin-bottom: 49px;
-
-  @include container;
+  width: 280px;
 }
 
 .hotel-search__title {
@@ -12,7 +13,8 @@
 }
 
 .hotel-search__description {
-  padding: 0 30px;
+  margin: 0;
+  // padding: 0 30px;
   font-size: $font-size-paragraph;
   line-height: 24px;
   font-weight: 400;
@@ -20,7 +22,13 @@
   color: $color-paragraph;
 }
 
-.hotel-search__link {
-  margin-left: 20px;
-  margin-bottom: 10px;
+@media (min-width: $tablet-width) {
+  .hotel-search {
+    padding: 0 12px;
+    width: 458px;
+  }
+
+  .hotel-search__link {
+    display: block;
+  }
 }
