@@ -38,7 +38,6 @@
 
   &--image {
     display: block;
-    margin: 0;
     padding: 0;
     margin: 0 auto;
   }
@@ -76,14 +75,13 @@
 
 .advantages__subcaption {
     &--grey {
-    text-align: center;
+      text-align: center;
   }
 }
 
 .advantages__sublist {
   @include container-mobile;
 
-  margin: 0;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -129,7 +127,4 @@
     padding-bottom: 50px;
     text-align: center;
   }
-}
-
-@media (min-width: $desktop-width) {
 }

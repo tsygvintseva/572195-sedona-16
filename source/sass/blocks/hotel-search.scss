@@ -21,10 +21,6 @@
   text-align: center;
   color: $color-paragraph;
 }
-//
-// .hotel-search__link {
-//   width: 458px;
-// }
 
 @media (min-width: $tablet-width) {
   .hotel-search {
@@ -35,7 +31,4 @@
   .hotel-search__link {
     display: block;
   }
-}
-
-@media (min-width: $desktop-width) {
 }

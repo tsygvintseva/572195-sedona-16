@@ -87,7 +87,6 @@
   margin-left: 10px;
   padding-left: 22px;
   height: 58px;
-  border: 0;
   background-color: #f2f2f2;
   box-sizing: border-box;
   border: solid 4px #f2f2f2;
@@ -129,7 +128,6 @@
   width: 100%;
   height: 160px;
   background-color: #f2f2f2;
-  border: 0;
   box-sizing: border-box;
   line-height: 26px;
   font-weight: 700;
@@ -185,7 +183,7 @@
       width: 50%;
     }
 
-      &--username {
+    &--username {
       order: 2;
       flex-grow: 1;
       width: 50%;
@@ -216,11 +214,6 @@
     flex-grow: 1;
     justify-content: space-between;
     align-items: baseline;
-  }
-
-  .review__button {
-    padding-left: 64px;
-    padding-right: 75px;
   }
 
   .review__required-fields {
