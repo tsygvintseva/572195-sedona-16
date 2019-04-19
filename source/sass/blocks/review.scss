@@ -235,11 +235,9 @@
 
   .review__attractions-wrapper {
     display: flex;
-    justify-content: center;
-  }
-
-  .review__item-wrapper {
-    display: block;
+    width: 420px;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 
@@ -295,12 +293,7 @@
   .review__attractions-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .review__item-wrapper {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
+    width: auto;
   }
 
   .review__comment {
