@@ -35,7 +35,7 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .site-list__item {
@@ -46,6 +46,10 @@
   }
 
   .site-list a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: $font-size-paragraph;
+    line-height: 26px;
     color: #000000;
     font-weight: 700;
   }
@@ -60,5 +64,11 @@
       color: rgba(0, 0, 0, 0.3);
       background-color: #ffffff;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    width: 239px;
   }
 }

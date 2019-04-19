@@ -14,7 +14,6 @@
 
 .hotel-search__description {
   margin: 0;
-  // padding: 0 30px;
   font-size: $font-size-paragraph;
   line-height: 24px;
   font-weight: 400;
@@ -25,10 +24,19 @@
 @media (min-width: $tablet-width) {
   .hotel-search {
     padding: 0 12px;
+    margin-bottom: 66px;
     width: 458px;
   }
 
   .hotel-search__link {
     display: block;
+  }
+
+  .hotel-search__title {
+    font-size: 30px;
+  }
+
+  .hotel-search__description {
+    padding-bottom: 45px;
   }
 }
