@@ -26,16 +26,25 @@
 }
 
 .review__group {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
 
-  &--impression {
-    @include container-mobile;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f2f2f2;
   }
 
-  &--attractions {
-    @include container-mobile;
+  &--contacts {
+    order: 3;
+    flex-grow: 1;
+    z-index: 0;
   }
 }
 
@@ -56,6 +65,7 @@
 
   &--contacts {
     display: block;
+    position: relative;
   }
 }
 
@@ -72,11 +82,17 @@
   &--impression {
     padding-left: 25px;
     font-weight: 700;
+    text-transform: none;
+    font-weight: 700;
+    color: #000000;
   }
 
   &--attractions {
     padding-left: 25px;
     font-weight: 700;
+    text-transform: none;
+    font-weight: 700;
+    color: #000000;
   }
 }
 
@@ -118,6 +134,34 @@
   &--attractions {
     flex-grow: 0;
   }
+}
+
+.review__input--phone-image {
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: none;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review__input--email-image {
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: none;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review__comment {
@@ -174,37 +218,73 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 60px;
+    justify-content: space-between;
+  }
+
+  .review__legend {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 10px;
+    font-size: 21px;
+
+    &--username {
+      text-align: left;
+    }
+
+    &--impression {
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  .review__label--username {
+    padding-left: 58px;
   }
 
   .review__group {
+    border-top: 2px solid #f2f2f2;
+    margin-bottom: 80px;
+
+    &::before {
+      display: none;
+    }
+
     &--impression {
       order: 1;
       flex-grow: 1;
-      width: 50%;
+      width: 40%;
+
+      border-top: none;
     }
 
     &--username {
       order: 2;
       flex-grow: 1;
-      width: 50%;
+      width: 40%;
+      border-top: none;
+      border-left: 2px solid #f2f2f2;
     }
 
     &--contacts {
+      position: relative;
       order: 3;
       flex-grow: 1;
-      width: 100%;
+      z-index: 0;
     }
 
     &--attractions {
       @include container-tablet;
+      position: relative;
 
       order: 4;
       flex-grow: 1;
+
     }
 
     &--comment {
       order: 5;
       flex-grow: 1;
+      position: relative;
     }
   }
 
@@ -235,34 +315,21 @@
 
   .review__attractions-wrapper {
     display: flex;
-    justify-content: center;
-  }
-
-  .review__item-wrapper {
-    display: block;
+    width: 300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__form {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0 120px;
   }
 
-  .review__group {
-    &--contacts {
-      width: 100%;
-    }
-
-    &--attractions {
-      width: 100%;
-    }
-
-    &--comment {
-      width: 100%;
-    }
+  .review__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .review__item {
@@ -274,36 +341,39 @@
   .review__label {
     &--contacts {
       padding-left: 0;
+      padding-right: 16px;
+    }
+
+    &--hidden {
+      display: none;
     }
   }
 
   .review__input {
     &--phone {
-      min-width: 258px;
+      width: 315px;
     }
 
     &--email {
-      min-width: 258px;
+      width: 316px;
     }
   }
 
-  .review__contacts-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .review__input--phone-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .review__input--email-image {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .review__attractions-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .review__item-wrapper {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-  }
-
-  .review__comment {
-    min-width: 960px;
+    width: auto;
   }
 }
