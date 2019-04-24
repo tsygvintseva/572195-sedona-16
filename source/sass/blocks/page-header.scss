@@ -1,0 +1,9 @@
+.page-header {
+  padding-bottom: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,9 @@
+.map {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    margin-bottom: 0;
+  }
+}

@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.site-list__item-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .site-list__item {
   text-align: center;
   background-color: #81b3d2;
@@ -13,8 +19,8 @@
 
 .site-list a {
   display: block;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: $font-size-title;
   line-height: 40px;
   color: #ffffff;
@@ -35,7 +41,11 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .site-list__item-wrapper {
+    display: flex;
   }
 
   .site-list__item {
@@ -45,6 +55,7 @@
   }
 
   .site-list a {
+    display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: $font-size-paragraph;
