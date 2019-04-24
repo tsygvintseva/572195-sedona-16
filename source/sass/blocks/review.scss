@@ -1,6 +1,7 @@
 .review {
   padding-right: 23px;
   padding-left: 21px;
+  margin-bottom: 47px;
 }
 
 .review__title {
@@ -83,7 +84,6 @@
     padding-left: 25px;
     font-weight: 700;
     text-transform: none;
-    font-weight: 700;
     color: #000000;
   }
 
@@ -91,7 +91,6 @@
     padding-left: 25px;
     font-weight: 700;
     text-transform: none;
-    font-weight: 700;
     color: #000000;
   }
 }
@@ -278,7 +277,6 @@
 
       order: 4;
       flex-grow: 1;
-
     }
 
     &--comment {
@@ -314,14 +312,18 @@
   }
 
   .review__attractions-wrapper {
+    @include container-mobile;
     display: flex;
-    width: 300px;
-    margin: 0 auto;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    margin-bottom: 66px;
+  }
+
   .review__form {
     justify-content: center;
     margin: 0 120px;
@@ -374,6 +376,6 @@
   .review__attractions-wrapper {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    // width: auto;
   }
 }

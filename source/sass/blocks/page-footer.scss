@@ -1,12 +1,12 @@
 .page-footer {
-  // padding: 10px 20px;
   margin: 0 auto;
 }
 
 .page-footer__hashtag {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 28px;
+  padding-bottom: 36px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -16,16 +16,12 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     box-sizing: border-box;
+    padding-top: 10px;
     padding-left: 60px;
     padding-right: 60px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-  }
-
-  .page-footer__hashtag {
-    margin: 0;
-    padding-left: 20px;
   }
 }
 
