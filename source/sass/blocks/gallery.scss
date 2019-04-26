@@ -1,15 +1,16 @@
 .gallery {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 
 .gallery__title-wrapper {
-  margin-top: 44px;
-  margin-bottom: 33px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 37px;
+  margin-bottom: 26px;
+  padding-left: 27px;
+  padding-right: 23px;
 }
 
 .gallery__title {
+  padding-bottom: 15px;
   font-size: $font-size-title;
   line-height: 26px;
   font-weight: 700;
@@ -56,7 +57,7 @@
 
 .gallery__caption {
   margin: 0;
-  padding-top: 17px;
+  padding-top: 16px;
   font-size: $font-size-paragraph;
   line-height: 24px;
   font-weight: 700;
@@ -70,32 +71,45 @@
   color: $color-paragraph;
 }
 
+.gallery__like-icon {
+  fill: #000000;
+  opacity: 0.3;
+  padding-right: 11px;
+}
+
 .gallery__like {
   position: relative;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 6px;
   padding-bottom: 15px;
-  padding-left: 37px;
   font-size: $font-size-paragraph;
   line-height: 24px;
   font-weight: 700;
-
-  & svg path {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .gallery {
     @include container-tablet;
+    margin-bottom: 63px;
+  }
+
+  .gallery__title-wrapper {
+    width: 428px;
+    margin: 0 auto;
+    margin-top: 66px;
+    margin-bottom: 20px;
+    padding: 0;
   }
 
   .gallery__title {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-size: 30px;
   }
 
   .gallery__description {
-    padding-bottom: 75px;
+    padding-bottom: 48px;
   }
 
   .gallery__list {
@@ -133,14 +147,25 @@
   }
 
   .gallery__author {
-    padding-bottom: 15px;
+    padding-bottom: 17px;
   }
 
   .gallery__like {
-    padding-right: 20px;
+    padding-top: 15px;
+    padding-right: 35px;
 
-    &::before {
-      left: 5px;
+    &--first {
+      padding-top: 12px;
+      padding-right: 20px;
+    }
+  }
+
+  .gallery__like-icon {
+    padding-right: 5px;
+
+    &--first {
+      padding-top: 4px;
+      padding-right: 7px;
     }
   }
 }
@@ -148,6 +173,12 @@
 @media (min-width: $desktop-width) {
   .gallery {
     @include container-desktop;
+    margin-bottom: 60px;
+  }
+
+  .gallery__title-wrapper {
+    margin-top: 102px;
+    margin-bottom: 24px;
   }
 
   .gallery__list {
@@ -174,10 +205,8 @@
     opacity: 1;
   }
 
-  .gallery__like {
-    & svg path {
-      fill: #ffffff;
-      opacity: 1;
-    }
+  .gallery__like-icon {
+    fill: #ffffff;
+    opacity: 1;
   }
 }

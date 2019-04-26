@@ -1,9 +1,10 @@
 .social__list {
+  width: 200px;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   list-style: none;
 }
 
@@ -21,20 +22,20 @@
     background-color: #669ec0;
   }
 
-  &:focus {
+  &:active {
     background-color: #5496bd;
   }
+}
+
+.social__link-icon {
+  fill: #ffffff;
 }
 
 .social__link {
   display: block;
 
-  & svg {
-    fill: #ffffff;
-
-    &:focus {
-      opacity: 0.3;
-    }
+  &:active .social__link-icon {
+    opacity: 0.3;
   }
 
   &--twitter {
