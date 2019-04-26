@@ -1,5 +1,7 @@
 var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+var navToggle = document.querySelector('.main-nav__toggle');
+// var popupError = document.querySelector(".modal-review__error"");
+// var popupSuccess = document.querySelector(".modal-review__success"");
 
     navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {

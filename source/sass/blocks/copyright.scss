@@ -6,6 +6,10 @@
   font-weight: 400;
 }
 
+.copyright__link-icon {
+  fill: #000000;
+}
+
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
@@ -13,8 +17,11 @@
   width: 27px;
   height: 34px;
 
-  svg {
-    width: 27px;
-    height: 34px;
+  &:hover .copyright__link-icon {
+    fill: #81b3d2;
+  }
+
+  &:active .copyright__link-icon {
+    fill: #e5e5e5;
   }
 }
