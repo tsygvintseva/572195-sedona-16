@@ -6,9 +6,14 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Седона | Форма отзыва</title>
     <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <div class="site-wrapper">
       <header class="page-header">
@@ -216,7 +221,7 @@
                 <a class="social__link social__link--twitter" href="https://twitter.com">
                   <span class="visually-hidden">Мы в Твиттере</span>
                   <svg class="social__link-icon" width="17.5" height="14.663">
-                    <use xlink:href="img/sprite.svg#twitter"></use>
+                    <use xlink:href="#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -224,7 +229,7 @@
                 <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg class="social__link-icon" width="8.672" height="18.944">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
+                    <use xlink:href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -232,7 +237,7 @@
                 <a class="social__link social__link--youtube" href="https://www.youtube.com">
                   <span class="visually-hidden">Мы на Ютуб</span>
                   <svg class="social__link-icon" width="19.979" height="14.015">
-                    <use xlink:href="img/sprite.svg#youtube"></use>
+                    <use xlink:href="#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -243,7 +248,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__link copyright__link--image visually-hidden">HTMLACADEMY</span>
               <svg class="copyright__link-icon" width="26.943px" height="34.09px">
-                <use xlink:href="img/sprite.svg#copyright"></use>
+                <use xlink:href="#icon-logo-htmlacademy"></use>
               </svg>
             </a>
           </div>
