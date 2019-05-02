@@ -16,6 +16,7 @@
 
 @mixin placeholder {
   &::placeholder {
+    text-align: left;
     font-size: $font-size-title;
     line-height: 26px;
     font-weight: 700;

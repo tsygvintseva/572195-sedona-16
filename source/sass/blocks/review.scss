@@ -46,6 +46,7 @@
   }
 
   &--contacts {
+    padding-bottom: 6px;
     order: 3;
     flex-grow: 1;
     z-index: 0;
@@ -61,17 +62,12 @@
 }
 
 .review__legend {
-  margin: 0;
   padding: 0;
   padding-top: 19px;
   font-size: $font-size-title;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-
-  &--contacts {
-    padding-bottom: 6px;
-  }
 
   &--impression {
     padding-bottom: 5px;
@@ -99,7 +95,7 @@
     margin-bottom: 16px;
   }
 
-  &--impression  {
+  &--impression {
     padding: 0;
     margin-top: 14px;
     margin-bottom: 0;
@@ -173,7 +169,7 @@
   border: none;
   background-color: #e6e6e6;
   position: absolute;
-  top: 34px;
+  top: 38px;
   right: 0;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -187,7 +183,7 @@
   border: none;
   background-color: #e6e6e6;
   position: absolute;
-  top: 33px;
+  top: 37px;
   right: 0;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
@@ -224,7 +220,7 @@
 
 .review__button {
   width: 100%;
-  padding: 16px 40px;
+  padding: 16px 33px;
 }
 
 .review__required-fields {
@@ -318,7 +314,6 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     flex-wrap: wrap;
     margin: 0 60px;
-    justify-content: space-between;
   }
 
   .review__legend {
@@ -363,11 +358,12 @@ input[type="checkbox"]:checked + label::before {
 
     &--attractions {
       margin: 0;
+      width: 50%;
     }
   }
 
   .review__label--username {
-    padding-left: 58px;
+    padding-left: 41px;
   }
 
   .review__group {
@@ -379,6 +375,8 @@ input[type="checkbox"]:checked + label::before {
     }
 
     &--impression {
+      position: relative;
+      margin-right: 15px;
       padding: 0;
       order: 1;
       flex-grow: 1;
@@ -393,7 +391,7 @@ input[type="checkbox"]:checked + label::before {
       flex-grow: 1;
       width: 30%;
       border-top: none;
-      border-left: 1px solid #f2f2f2;
+      border-left: 1px solid #dbdbdb;
     }
 
     &--contacts {
@@ -447,7 +445,7 @@ input[type="checkbox"]:checked + label::before {
     padding-right: 75px;
   }
 
-  input[type="radio"] + label::before  {
+  input[type="radio"] + label::before {
     margin-right: 15px;
   }
 

@@ -83,12 +83,12 @@
                 <p class="review__item">
                   <label class="review__label review__label--username" for="username-field">
                   Имя<sup>*</sup>:</label>
-                  <input class="review__input" type="text" name="username" id="username-field" placeholder="Петр">
+                  <input class="review__input review__input--required" type="text" name="username" id="username-field" placeholder="Петр">
                 </p>
                 <p class="review__item">
                   <label class="review__label review__label--username" for="lastname-field">
                   Фамилия<sup>*</sup>:</label>
-                    <input class="review__input" type="text" name="lastname" id="lastname-field" placeholder="Иванов">
+                  <input class="review__input review__input--required" type="text" name="lastname" id="lastname-field" placeholder="Иванов">
                 </p>
                 <p class="review__item review__item--username">
                   <label class="review__label review__label--username" for="patronymic-field">
@@ -106,14 +106,14 @@
                     <label class="review__label review__label--contacts" for="phone-field">
                       <span class="review__label review__label--hidden">Контактный</span> телефон<sup>*</sup>:
                     </label>
-                    <input class="review__input review__input--phone" type="tel" name="phone" id="phone-field" placeholder="Введите телефон">
+                    <input class="review__input review__input--phone review__input--required" type="tel" name="phone" id="phone-field" placeholder="Введите телефон">
                     <span class="review__input review__input--phone-image"></span>
                   </p>
                   <p class="review__item review__item--contacts">
                     <label class="review__label review__label--contacts" for="email-field">
                       Электронная почта<sup>*</sup>:
                     </label>
-                    <input class="review__input review__input--email" type="email" name="email" id="email-field" placeholder="Введите e-mail">
+                    <input class="review__input review__input--email review__input--required" type="email" name="email" id="email-field" placeholder="Введите e-mail">
                     <span class="review__input review__input--email-image"></span>
                   </p>
                 </div>
@@ -194,20 +194,27 @@
         </div>
 
         <section class="modal-review__error">
-          <h1 class="modal-review__title">Что-то пошло не так!</h1>
-          <p class="modal-review__description">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
-          </p>
-          <button class="modal-review__button--ok button" type="button">Ок</button>
+          <div class="modal-review__error-wrapper">
+            <h1 class="modal-review__title">Что-то пошло не так!</h1>
+            <p class="modal-review__description">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+            </p>
+          </div>
+          <button class="modal-review__button modal-review__button--ok button" type="button">Ок</button>
         </section>
 
         <section class="modal-review__success">
-          <h1 class="modal-review__title">Ваш отзыв отправлен!</h1>
-          <p class="modal-review__description">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-          </p>
-          <button class="modal-review__button--close button" type="button">Закрыть окно</button>
+          <div class="modal-review__success-wrapper">
+            <h1 class="modal-review__title">Ваш отзыв отправлен!</h1>
+            <p class="modal-review__description">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.
+            </p>
+          </div>
+          <button class="modal-review__button modal-review__button--close button" type="button">Закрыть окно</button>
         </section>
+
+        <div class="modal-review__overlay"></div>
+
       </main>
 
       <footer class="page-footer">
