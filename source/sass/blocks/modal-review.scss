@@ -29,7 +29,6 @@
 }
 
 .modal-review__success {
-  position: relative;
   width: 320px;
   display: none;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -80,15 +79,15 @@
 }
 
 .modal-review__error-wrapper {
- width: 280px;
- margin: 0 auto;
- text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .modal-review__success-wrapper {
- width: 280px;
- margin: 0 auto;
- text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .modal-review__title {
@@ -151,11 +150,11 @@
   }
 
   .modal-review__error-wrapper {
-   width: 320px;
+    width: 320px;
   }
 
   .modal-review__success-wrapper {
-   width: 460px;
+    width: 460px;
   }
 
   .modal-review__title {
