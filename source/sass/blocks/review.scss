@@ -70,11 +70,16 @@
   text-align: center;
 
   &--impression {
+    padding-top: 22px;
     padding-bottom: 5px;
   }
 
   &--comment {
     padding-bottom: 11px;
+  }
+
+  &--contacts {
+    padding-bottom: 5px;
   }
 }
 
@@ -138,6 +143,7 @@
   &:focus {
     border: solid 4px #e5e5e5;
     background-color: #ffffff;
+    outline: none;
   }
 
   &--phone {
@@ -169,7 +175,7 @@
   border: none;
   background-color: #e6e6e6;
   position: absolute;
-  top: 38px;
+  top: 34px;
   right: 0;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -183,7 +189,7 @@
   border: none;
   background-color: #e6e6e6;
   position: absolute;
-  top: 37px;
+  top: 33px;
   right: 0;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
@@ -212,6 +218,7 @@
   &:focus {
     border: solid 4px #e5e5e5;
     background-color: #ffffff;
+    outline: none;
   }
 }
 
@@ -292,11 +299,6 @@ input[type="checkbox"]:checked + label::before {
   background-position: center;
 }
 
-input[type="checkbox"]:focus + label::before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 @media (min-width: $tablet-width) {
   .review {
     margin-top: 76px;
@@ -329,6 +331,7 @@ input[type="checkbox"]:focus + label::before {
     font-size: 21px;
 
     &--username {
+      padding-left: 40px;
       margin-bottom: 41px;
       text-align: left;
     }
@@ -343,6 +346,10 @@ input[type="checkbox"]:focus + label::before {
     &--attractions {
       margin-bottom: 42px;
     }
+
+    &--contacts {
+      padding-bottom: 2px;
+    }
   }
 
   .review__item {
@@ -351,12 +358,16 @@ input[type="checkbox"]:focus + label::before {
     }
 
     &--contacts {
-      margin-top: 19px;
+      margin-top: 22px;
     }
 
     &--attractions {
       margin: 0;
       margin-bottom: 33px;
+    }
+
+    &--mountain {
+      margin-right: 13px;
     }
   }
 
@@ -384,7 +395,7 @@ input[type="checkbox"]:focus + label::before {
     &--username {
       padding: 0;
       order: 2;
-      width: 50%;
+      margin-left: 16px;
       border-top: none;
     }
 
@@ -436,8 +447,8 @@ input[type="checkbox"]:focus + label::before {
 
   .review__button {
     width: 50%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 43px;
+    padding-right: 57px;
   }
 
   input[type="radio"] + label::before {
@@ -474,6 +485,7 @@ input[type="checkbox"]:focus + label::before {
     }
 
     &--username {
+      width: 46%;
       margin-bottom: 35px;
     }
 
@@ -498,7 +510,17 @@ input[type="checkbox"]:focus + label::before {
     }
 
     &--contacts {
+      padding-bottom: 8px;
       margin-bottom: 48px;
+    }
+
+    &--attractions {
+      margin-bottom: 35px;
+      padding-bottom: 8px;
+    }
+
+    &--comment {
+      padding-bottom: 8px;
     }
   }
 
@@ -509,6 +531,7 @@ input[type="checkbox"]:focus + label::before {
 
   .review__item {
     &--contacts {
+      margin-top: 10px;
       display: flex;
     }
 
@@ -516,11 +539,15 @@ input[type="checkbox"]:focus + label::before {
       margin-top: 14px;
       margin-left: 5px;
     }
+
+    &--mountain {
+      margin-right: 0;
+    }
   }
 
   .review__label {
     &--contacts {
-      padding-top: 2px;
+      padding-top: 10px;
       padding-left: 0;
       padding-right: 16px;
     }
@@ -560,14 +587,7 @@ input[type="checkbox"]:focus + label::before {
     justify-content: space-between;
   }
 
-  .review__item--attractions-wrapper {
-    width: 444px;
-    display: flex;
-    justify-content: space-between;
-  }
-
   .review__comment {
-    margin-top: 45px;
     margin-bottom: 35px;
     padding-left: 17px;
   }
