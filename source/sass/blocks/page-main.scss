@@ -3,6 +3,7 @@
   width: 100%;
   height: 158px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
@@ -26,6 +27,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-color: #ffffff;
     background-size: 768px auto;
   }
 }
@@ -35,12 +37,14 @@
   width: 100%;
   height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-color: #ffffff;
     background-size: 768px auto;
   }
 }
