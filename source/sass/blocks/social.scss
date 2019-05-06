@@ -1,8 +1,6 @@
 .social__list {
-  width: 200px;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 0;
   margin-bottom: 40px;
   list-style: none;
@@ -53,3 +51,9 @@
     padding-top: 13px;
   }
 }
+//
+// @media (min-width: $tablet-width) {
+//   .social__item {
+//     margin-top: 100px;
+//   }
+// }

@@ -16,6 +16,8 @@
 
 @mixin placeholder {
   &::placeholder {
+    font-family: "PT Sans", sans-serif;
+    text-align: left;
     font-size: $font-size-title;
     line-height: 26px;
     font-weight: 700;
