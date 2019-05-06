@@ -255,7 +255,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 21px;
+    margin-bottom: 50px;
   }
 
   .advantages__title {
@@ -383,17 +383,16 @@
   }
 
   .advantages__caption {
+    padding-top: 20px;
     padding-left: 47px;
     padding-right: 47px;
     padding-bottom: 10px;
 
     &--grey {
-      padding-bottom: 46px;
+      padding-left: 49px;
+      padding-right: 49px;
+      padding-bottom: 44px;
     }
-  }
-
-  .advantages__number {
-    padding-bottom: 21px;
   }
 
   .advantages__sublist {
@@ -463,8 +462,8 @@
     padding-right: 67px;
 
     &--grey {
-      padding-top: 0;
-      padding-bottom: 61px;
+      padding-top: 19px;
+      padding-bottom: 64px;
       padding-left: 52px;
       padding-right: 52px;
     }
@@ -481,7 +480,7 @@
     padding-bottom: 0;
 
     &--souvenirs {
-      padding-right: 73px;
+      padding-right: 60px;
     }
   }
 }

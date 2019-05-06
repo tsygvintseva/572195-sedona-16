@@ -38,13 +38,13 @@
   }
 
   .hotel-search__title {
-    padding-top: 4px;
+    padding-top: 6px;
     padding-bottom: 30px;
     font-size: 30px;
   }
 
   .hotel-search__description {
-    padding-bottom: 45px;
+    padding-bottom: 42px;
   }
 
   .hotel-search__link {
@@ -56,10 +56,6 @@
 @media (min-width: $desktop-width) {
   .hotel-search {
     margin-bottom: 65px;
-  }
-
-  .hotel-search__title {
-    padding-top: 10px;
   }
 
   .hotel-search__description {
