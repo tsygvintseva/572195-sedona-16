@@ -1,6 +1,7 @@
 @import "variables";
 @import "scaffolding";
 @import "mixins";
+@import "normalize";
 @import "blocks/site-wrapper";
 @import "blocks/button";
 @import "blocks/page-header";
@@ -8,6 +9,7 @@
 @import "blocks/site-list";
 @import "blocks/page-main";
 @import "blocks/advantages";
+@import "blocks/map";
 @import "blocks/hotel-search";
 @import "blocks/review";
 @import "blocks/modal-review";

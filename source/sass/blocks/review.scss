@@ -273,8 +273,8 @@ input[type="radio"]:checked + label::after {
 }
 
 input[type="checkbox"] + label::before {
-  margin-right: 19px;
   content: "";
+  margin-right: 19px;
   display: inline-block;
   vertical-align: middle;
   height: 55px;
@@ -290,6 +290,11 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 @media (min-width: $tablet-width) {
