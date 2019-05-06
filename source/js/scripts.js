@@ -1,14 +1,39 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
-// var popupError = document.querySelector(".modal-review__error"");
-// var popupSuccess = document.querySelector(".modal-review__success"");
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
+var form = document.querySelector(".review__form");
+var fields = document.querySelectorAll(".review__input--required");
+var popupError = document.querySelector(".modal-review__error");
+var popupSuccess = document.querySelector(".modal-review__success");
+var closeButtons = document.querySelectorAll(".modal-review__button");
+var overlay = document.querySelector(".modal-review__overlay");
 
-    navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+navToggle.addEventListener("click", function() {
+  if (navMain.classList.contains("main-nav--closed")) {
+    navMain.classList.remove("main-nav--closed");
+    navMain.classList.add("main-nav--opened");
+  } else {
+    navMain.classList.add("main-nav--closed");
+    navMain.classList.remove("main-nav--opened");
+  }
+});
+
+form.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  fields.forEach(function (item) {
+    if (item.value) {
+      popupSuccess.classList.add("modal-review__show");
+      overlay.classList.add("modal-review__overlay--show");
     } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
+      popupError.classList.add("modal-review__show");
+      overlay.classList.add("modal-review__overlay--show");
+    };
   });
+});
+
+closeButtons.forEach(function (item) {
+  item.addEventListener("click", function (evt) {
+    var target = evt.target;
+    target.parentNode.classList.remove("modal-review__show");
+    overlay.classList.remove("modal-review__overlay--show");
+  });
+});
