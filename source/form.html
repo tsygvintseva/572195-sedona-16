@@ -8,6 +8,11 @@
     <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/min/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -17,7 +22,7 @@
 
     <div class="site-wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li>
               <ul class="site-list__item-wrapper">
@@ -32,13 +37,11 @@
             <li>
               <ul class="site-list__item-wrapper">
                 <li class="site-list__item">
-                  <li class="site-list__item">
-                    <a class="site-list__link">Форма отзыва</a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                  </li>
-                </ul>
+                  <a class="site-list__link">Форма отзыва</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -124,19 +127,19 @@
                   Ваше общее впечатление:
                 </legend>
                 <p class="review__item review__item--impression">
-                  <input class="review__input review__input--impression" type="radio" name="impression" id="positive-field" value="Скорее положительное" checked>
+                  <input class="review__input review__input--impression visually-hidden" type="radio" name="impression" id="positive-field" value="Скорее положительное" checked>
                   <label class="review__label review__label--impression" for="positive-field">
                     Скорее положительное
                   </label>
                 </p>
                 <p class="review__item review__item--impression">
-                  <input class="review__input review__input--impression" type="radio" name="impression" id="negative-field" value="Скорее отрицательное">
+                  <input class="review__input review__input--impression visually-hidden" type="radio" name="impression" id="negative-field" value="Скорее отрицательное">
                   <label class="review__label review__label--impression" for="negative-field">
                     Скорее отрицательное
                   </label>
                 </p>
                 <p class="review__item review__item--impression">
-                  <input class="review__input review__input--impression" type="radio" name="impression" id="hardtoanswer-field" value="Затрудняюсь ответить">
+                  <input class="review__input review__input--impression visually-hidden" type="radio" name="impression" id="hardtoanswer-field" value="Затрудняюсь ответить">
                   <label class="review__label review__label--impression" for="hardtoanswer-field">
                     Затрудняюсь ответить
                   </label>
@@ -149,25 +152,25 @@
                 </legend>
                 <div class="review__attractions-wrapper">
                   <p class="review__item review__item--attractions">
-                    <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="bridge-field" value="Мост Дьявола" checked>
+                    <input class="review__input review__input--attractions visually-hidden" type="checkbox" name="attractions" id="bridge-field" value="Мост Дьявола" checked>
                     <label class="review__label review__label--attractions" for="bridge-field">
                       Мост Дьявола
                     </label>
                   </p>
                   <p class="review__item review__item--mountain review__item--attractions">
-                    <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="mountain-field" value="Гора-Колокол" checked>
+                    <input class="review__input review__input--attractions visually-hidden" type="checkbox" name="attractions" id="mountain-field" value="Гора-Колокол" checked>
                     <label class="review__label review__label--attractions" for="mountain-field">
                       Гора-Колокол
                     </label>
                   </p>
                   <p class="review__item review__item--attractions">
-                    <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="park-field" value="Слайд-парк" checked>
+                    <input class="review__input review__input--attractions visually-hidden" type="checkbox" name="attractions" id="park-field" value="Слайд-парк" checked>
                     <label class="review__label review__label--attractions" for="park-field">
                       Слайд-парк
                     </label>
                   </p>
                   <p class="review__item review__item--attractions">
-                    <input class="review__input review__input--attractions" type="checkbox" name="attractions" id="rock-field" value="Красные скалы">
+                    <input class="review__input review__input--attractions visually-hidden" type="checkbox" name="attractions" id="rock-field" value="Красные скалы">
                     <label class="review__label review__label--attractions" for="rock-field">
                       Красные скалы
                     </label>
@@ -262,6 +265,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="js/min/scripts.min.js"></script>
   </body>
 </html>

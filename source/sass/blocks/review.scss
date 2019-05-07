@@ -238,7 +238,6 @@
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0;
-  display: none;
   width: 53px;
   height: 53px;
 }
@@ -266,6 +265,10 @@ input[type="radio"] + label::before {
   border-radius: 50%;
 }
 
+input[type="radio"]:focus + label::before {
+  outline: 5px auto #81b3d2;
+}
+
 input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
@@ -288,6 +291,10 @@ input[type="checkbox"] + label::before {
   width: 55px;
   background-color: #f2f2f2;
   border-radius: 10%;
+}
+
+input[type="checkbox"]:focus + label::before {
+  outline: 5px auto #81b3d2;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -344,11 +351,17 @@ input[type="checkbox"]:checked + label::before {
     }
 
     &--attractions {
+      margin: 0 auto;
       margin-bottom: 42px;
     }
 
     &--contacts {
+      margin: 0 auto;
       padding-bottom: 2px;
+    }
+
+    &--comment {
+      margin: 0 auto;
     }
   }
 

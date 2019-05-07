@@ -29,6 +29,10 @@
   outline: 0;
 }
 
+.main-nav--nojs .main-nav__toggle {
+    display: none;
+}
+
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   top: 20px;

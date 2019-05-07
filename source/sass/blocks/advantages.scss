@@ -398,7 +398,7 @@
   .advantages__sublist {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0;
   }
 
@@ -470,6 +470,7 @@
   }
 
   .advantages__sublist {
+    width: 1200px;
     margin-bottom: 47px;
   }
 

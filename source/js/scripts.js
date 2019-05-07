@@ -7,6 +7,8 @@ var popupSuccess = document.querySelector(".modal-review__success");
 var closeButtons = document.querySelectorAll(".modal-review__button");
 var overlay = document.querySelector(".modal-review__overlay");
 
+navMain.classList.remove('main-nav--nojs');
+
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains("main-nav--closed")) {
     navMain.classList.remove("main-nav--closed");

@@ -31,25 +31,34 @@
 }
 
 .social__link {
+  padding: 0;
   display: block;
+  width: 46px;
+  height: 48px;
 
   &:active .social__link-icon {
     opacity: 0.3;
   }
 
   &--twitter {
-    padding-left: 14px;
-    padding-top: 14px;
+    svg {
+      padding-left: 14px;
+      padding-top: 15px;
+    }
   }
 
   &--facebook {
-    padding-left: 19px;
-    padding-top: 14px;
+    svg {
+      padding-left: 19px;
+      padding-top: 14px;
+    }
   }
 
   &--youtube {
-    padding-left: 13px;
-    padding-top: 13px;
+    svg {
+      padding-left: 13px;
+      padding-top: 17px;
+    }
   }
 }
 
