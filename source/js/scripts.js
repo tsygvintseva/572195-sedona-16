@@ -2,8 +2,8 @@ var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
 var form = document.querySelector(".review__form");
 var fields = document.querySelectorAll(".review__input--required");
-var popupError = document.querySelector(".modal-review__error");
-var popupSuccess = document.querySelector(".modal-review__success");
+var popupError = document.querySelector(".modal-review--error");
+var popupSuccess = document.querySelector(".modal-review--success");
 var closeButtons = document.querySelectorAll(".modal-review__button");
 var overlay = document.querySelector(".modal-review__overlay");
 

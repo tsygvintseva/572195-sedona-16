@@ -47,7 +47,6 @@
 
   &--contacts {
     padding-bottom: 6px;
-    order: 3;
     flex-grow: 1;
     z-index: 0;
   }
@@ -128,12 +127,18 @@
   @include placeholder;
 
   flex-grow: 1;
+  width: 1%;
   margin-left: 15px;
   padding-left: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   height: 58px;
   background-color: #f2f2f2;
   box-sizing: border-box;
   border: solid 4px #f2f2f2;
+  font-size: $font-size-title;
+  line-height: 26px;
+  font-weight: 700;
 
   &:hover {
     background-color: #e5e5e5;
@@ -265,8 +270,16 @@ input[type="radio"] + label::before {
   border-radius: 50%;
 }
 
+input[type="radio"]:hover + label::before {
+  background-color: #e5e5e5;
+}
+
+input[type="radio"]:active + label::before {
+  background-color: #d5d5d5;
+}
+
 input[type="radio"]:focus + label::before {
-  outline: 5px auto #81b3d2;
+  outline: 1px auto #81b3d2;
 }
 
 input[type="radio"]:checked + label::after {
@@ -282,6 +295,18 @@ input[type="radio"]:checked + label::after {
   border-radius: 50%;
 }
 
+input[type="radio"]:active + label::after {
+  background-color: #333333;
+  opacity: 0.3;
+}
+
+input[type="radio"]:disabled + label::before {
+  background-color: #e5e5e5;
+  opacity: 0.6;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}
+
 input[type="checkbox"] + label::before {
   content: "";
   margin-right: 19px;
@@ -293,17 +318,41 @@ input[type="checkbox"] + label::before {
   border-radius: 10%;
 }
 
-input[type="checkbox"]:focus + label::before {
-  outline: 5px auto #81b3d2;
+input[type="checkbox"]:hover + label::before {
+  background-color: #e5e5e5;
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:active + label::before {
+  background-color: #d5d5d5;
+}
+
+input[type="checkbox"]:focus + label::before {
+  outline: 1px auto #81b3d2;
+}
+
+input[type="checkbox"]:checked + label::after {
   content: "";
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 24px;
+  height: 17px;
   display: inline-block;
   vertical-align: middle;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+input[type="checkbox"]:active + label::after {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  background-color: #e5e5e5;
+  opacity: 0.6;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
 }
 
 @media (min-width: $tablet-width) {
@@ -408,8 +457,9 @@ input[type="checkbox"]:checked + label::before {
     &--username {
       padding: 0;
       order: 2;
-      margin-left: 16px;
+      margin-left: 30px;
       border-top: none;
+      width: 45%;
     }
 
     &--contacts {

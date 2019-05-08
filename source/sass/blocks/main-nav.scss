@@ -29,10 +29,6 @@
   outline: 0;
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   top: 20px;
@@ -67,6 +63,14 @@
 
 .main-nav--opened .site-list__item {
   display: none;
+}
+
+.main-nav--nojs .main-nav__toggle::before {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
